@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5 Semantic Elements</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: hwb(100 94% 0%);
+}
+header {
+    background: linear-gradient(45deg, #6a0dad, #ff7f50);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #4b0082;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffd700;
+    margin: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section {
+    flex: 3;
+    background-color: #ffe4e1;
+    padding: 15px;
+    border-radius: 10px;
+aside {
+    flex: 1;
+    background-color: #f5cba7;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+article {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 6px solid #ff7f50;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+}
+figcaption {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+.highlight {
+    color: #6a0dad;
+    font-weight: bold;
+}
+footer {
+    background: linear-gradient(45deg, #4b0082, #6a0dad);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HTML5 Semantic Tags</h1>
+    <p>Demonstration of HTML5 Page Structure</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <section>
+
+        <article>
+            <h2>Article Section</h2>
+            <p>
+                This content is inside an
+                <span class="highlight">article</span> tag which represents independent content.
+            </p>
+
+            <figure>
+                <img src="https://via.placeholder.com/300x150" 
+                     alt="Sample Image"
+                     width="300" height="150">
+                <figcaption>Sample Image with Caption</figcaption>
+            </figure>
+        </article>
+
+        <div>
+            <h3>Div and Span Example</h3>
+            <p>
+                The <span class="highlight">span</span> tag is used for inline styling,
+                while <span class="highlight">div</span> is used for block-level grouping.
+            </p>
+        </div>
+
+    </section>
+
+    <aside>
+        <h3>Aside Section</h3>
+        <p>
+            This content is displayed using the
+            <span class="highlight">aside</span> tag.
+        </p>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2026 HTML5 Lab Program</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Audio and Video in HTML</title>
+</head>
+<body>
+<h1>HTML5 Audio and Video Embedding</h1>
+<!-- Audio Section -->
+<h2>Audio Example</h2>
+<audio controls>
+<source src="https://commondatastorage.googleapis.com/codeskulptor-assets/week7-
+brrring.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<!-- Video Section -->
+<h2>Video Example</h2>
+<video width="400" height="300" controls>
+
+<source src="https://commondatastorage.googleapis.com/gtv-videos-
+bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+
+Your browser does not support the video element.
+</video>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Types of CSS</title>
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Internal CSS -->
+<style>
+h2 {
+color: #00ff9d;
+text-align: center;
+}
+p.internal {
+
+font-size: 18px;
+color: #807e00;
+}
+</style>
+</head>
+<body>
+<h1 style="color:#15ff00; text-align:center;">
+Inline CSS Example
+</h1>
+<p class="internal">
+This paragraph uses Internal CSS styling.
+</p>
+<p class="external">
+This paragraph uses External CSS styling.
+</p>
+</body>
+</html>
